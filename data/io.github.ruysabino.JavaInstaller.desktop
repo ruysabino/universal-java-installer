@@ -1,0 +1,18 @@
+[Desktop Entry]
+Name=Java Installer
+Name[pt]=Instalador Java
+Name[es]=Instalador de Java
+Name[tr]=Java Kurucu
+GenericName=Java version manager
+GenericName[pt]=Gestor de versões Java
+Comment=Install and manage OpenJDK and Oracle JDK versions
+Comment[pt]=Instale e faça a gestão de versões OpenJDK e Oracle JDK
+Comment[es]=Instala y gestiona versiones de OpenJDK y Oracle JDK
+Comment[tr]=OpenJDK ve Oracle JDK sürümlerini kurun ve yönetin
+Exec=universal-java-installer
+Icon=io.github.ruysabino.JavaInstaller
+Terminal=false
+Type=Application
+Categories=Settings;System;
+StartupNotify=true
+Keywords=java;jdk;jre;openjdk;oracle;installer;

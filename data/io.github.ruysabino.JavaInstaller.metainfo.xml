@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<component type="desktop-application">
+  <id>io.github.ruysabino.JavaInstaller</id>
+  <metadata_license>CC0-1.0</metadata_license>
+  <project_license>GPL-3.0-or-later</project_license>
+  <name>Java Installer</name>
+  <summary>Install and manage OpenJDK and Oracle JDK versions</summary>
+  <description>
+    <p>
+      A distribution independent GTK4 application to install, remove and switch
+      between Java runtimes. OpenJDK builds come from your distribution
+      (apt, dnf or pacman); Oracle JDK archives are downloaded directly from
+      Oracle after you accept Oracle's licence — nothing from Oracle is
+      redistributed by this project.
+    </p>
+    <p>Fork of pardus-java-installer, extended to Debian/Ubuntu, Fedora and Arch families.</p>
+  </description>
+  <launchable type="desktop-id">io.github.ruysabino.JavaInstaller.desktop</launchable>
+  <url type="homepage">https://github.com/ruysabino/universal-java-installer</url>
+  <url type="bugtracker">https://github.com/ruysabino/universal-java-installer/issues</url>
+  <developer id="io.github.ruysabino"><name>Ruy Sabino Pereira</name></developer>
+  <content_rating type="oars-1.1"/>
+  <releases>
+    <release version="1.0.0" date="2026-08-18">
+      <description><p>First release of the fork: GTK4/libadwaita UI, apt/dnf/pacman backends, Oracle downloads with licence acceptance and checksum verification.</p></description>
+    </release>
+  </releases>
+</component>
