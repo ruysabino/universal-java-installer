@@ -1,0 +1,73 @@
+Universal Java Installer
+========================
+
+Copyright (C) 2026 Ruy Sabino Pereira and contributors.
+Licensed under the GNU General Public License v3.0 or later (GPL-3.0-or-later).
+
+
+1. Upstream work
+----------------
+
+This project is a fork of **pardus-java-installer**:
+
+    https://github.com/pardus/pardus-java-installer
+    Copyright (C) 2023 Pardus <dev@pardus.org.tr>
+    Upstream contact: Fatih Altun <fatih.altun@pardus.org.tr>
+    License: GPL-3.0-or-later
+
+The fork keeps the same GPL-3.0-or-later license, as required by the upstream
+license. Substantial parts were rewritten (GTK4/libadwaita UI, multi-backend
+package layer, Oracle download flow), but the original design and portions of
+the process/alternatives handling derive from the Pardus work and remain
+credited here.
+
+This project is **not affiliated with, endorsed by or supported by** Pardus,
+TÜBİTAK ULAKBİM or the Republic of Türkiye. "Pardus" is a trademark of its
+respective owner and is used here only to describe the origin of the code.
+
+
+2. Oracle software
+------------------
+
+No Oracle binary is redistributed by this project. Oracle JDK archives are
+downloaded at runtime directly from Oracle's official servers
+(https://download.oracle.com) and are only installed after the user explicitly
+accepts the applicable Oracle license shown in the application:
+
+  * Oracle No-Fee Terms and Conditions (NFTC)
+    https://www.oracle.com/downloads/licenses/no-fee-license.html
+  * Oracle Technology Network License Agreement / BCL (older releases)
+    https://www.oracle.com/downloads/licenses/javase-license1.html
+
+"Oracle", "Java" and "JDK" are trademarks or registered trademarks of Oracle
+and/or its affiliates. This project is independent and not affiliated with,
+endorsed by or sponsored by Oracle.
+
+
+3. OpenJDK
+----------
+
+OpenJDK builds are installed through the package manager of the running
+distribution. They are licensed under GPL-2.0 with the Classpath Exception by
+their respective vendors (Debian, Ubuntu, Fedora, Arch Linux, ...). This
+project does not redistribute them either.
+
+
+4. Runtime dependencies
+-----------------------
+
+  * GTK 4            LGPL-2.1-or-later   https://gitlab.gnome.org/GNOME/gtk
+  * libadwaita       LGPL-2.1-or-later   https://gitlab.gnome.org/GNOME/libadwaita
+  * PyGObject        LGPL-2.1-or-later   https://gitlab.gnome.org/GNOME/pygobject
+  * polkit / pkexec  LGPL-2.0-or-later   https://gitlab.freedesktop.org/polkit/polkit
+
+All of them are dynamically linked system libraries provided by the
+distribution; none is bundled with this project.
+
+
+5. Icon
+-------
+
+The application icon shipped in data/ is an original work of this project,
+licensed under CC-BY-SA-4.0. It does not reuse the Pardus logo or any Oracle
+or Java trademark artwork.

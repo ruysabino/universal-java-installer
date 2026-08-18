@@ -1,0 +1,8 @@
+build/
+stage/
+__pycache__/
+*.pyc
+*.mo
+*.deb
+*.buildinfo
+*.changes
