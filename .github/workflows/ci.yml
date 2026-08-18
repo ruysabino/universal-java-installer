@@ -1,0 +1,44 @@
+name: CI
+
+on:
+  push:
+    branches: [main]
+  pull_request:
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - name: Install build dependencies
+        run: |
+          sudo apt-get update
+          sudo apt-get install -y meson ninja-build gettext python3-gi \
+            gir1.2-gtk-4.0 gir1.2-adw-1 python3-pip
+          pip install ruff
+      - name: Lint
+        run: ruff check src
+      - name: Compile all sources
+        run: python3 -m compileall -q src
+      - name: Meson build & install (staged)
+        run: |
+          meson setup build --prefix=/usr
+          meson compile -C build
+          DESTDIR="$PWD/stage" meson install -C build
+          test -x stage/usr/bin/universal-java-installer
+          test -f stage/usr/share/polkit-1/actions/io.github.ruysabino.JavaInstaller.policy
+
+  deb:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - name: Build .deb
+        run: |
+          sudo apt-get update
+          sudo apt-get install -y devscripts debhelper dh-python meson ninja-build gettext
+          dpkg-buildpackage -us -uc -b
+          mkdir -p out && cp ../*.deb out/ || true
+      - uses: actions/upload-artifact@v4
+        with:
+          name: deb
+          path: out/*.deb
