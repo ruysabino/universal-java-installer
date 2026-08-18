@@ -1,0 +1,22 @@
+# Maintainer: Ruy Sabino Pereira <ruysabino@users.noreply.github.com>
+pkgname=universal-java-installer
+pkgver=1.0.0
+pkgrel=1
+pkgdesc="Install and manage OpenJDK and Oracle JDK versions (GTK4/libadwaita)"
+arch=('any')
+url="https://github.com/ruysabino/universal-java-installer"
+license=('GPL3')
+depends=('python' 'python-gobject' 'gtk4' 'libadwaita' 'polkit' 'ca-certificates')
+optdepends=('java-runtime-common: default JVM handling via archlinux-java')
+makedepends=('meson' 'ninja' 'gettext')
+source=("$pkgname-$pkgver.tar.gz::$url/archive/refs/tags/v$pkgver.tar.gz")
+sha256sums=('SKIP')
+
+build() {
+  arch-meson "$pkgname-$pkgver" build
+  meson compile -C build
+}
+
+package() {
+  meson install -C build --destdir "$pkgdir"
+}
