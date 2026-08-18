@@ -1,0 +1,28 @@
+Source: universal-java-installer
+Section: utils
+Priority: optional
+Maintainer: Ruy Sabino Pereira <ruysabino@users.noreply.github.com>
+Build-Depends: debhelper-compat (= 13), meson, ninja-build, dh-python, python3-all, gettext
+Standards-Version: 4.6.2
+Homepage: https://github.com/ruysabino/universal-java-installer
+Rules-Requires-Root: no
+
+Package: universal-java-installer
+Architecture: all
+Depends: ${misc:Depends},
+         ${python3:Depends},
+         python3 (>= 3.9),
+         python3-gi,
+         gir1.2-gtk-4.0,
+         gir1.2-adw-1,
+         policykit-1 | polkitd,
+         ca-certificates
+Recommends: default-jre | openjdk-21-jre
+Description: Install and manage Java versions on any Linux distribution
+ Graphical (GTK4/libadwaita) manager for OpenJDK and Oracle JDK runtimes.
+ OpenJDK builds are installed through the native package manager (apt, dnf or
+ pacman); Oracle JDK archives are downloaded directly from Oracle after the
+ user accepts Oracle's licence and are verified against Oracle's published
+ SHA-256 checksum. Nothing from Oracle is redistributed.
+ .
+ Fork of pardus-java-installer, portable beyond Pardus.

@@ -1,0 +1,10 @@
+universal-java-installer (1.0.0) unstable; urgency=medium
+
+  * Initial release of the fork of pardus-java-installer.
+  * Ported UI to GTK4 + libadwaita.
+  * Added apt, dnf and pacman backends with runtime detection.
+  * Oracle JDK is downloaded from Oracle with explicit licence acceptance and
+    SHA-256 verification instead of being installed from a repackaged archive.
+  * Default JVM handling via update-alternatives or archlinux-java.
+
+ -- Ruy Sabino Pereira <ruysabino@users.noreply.github.com>  Tue, 18 Aug 2026 18:00:00 +0000
