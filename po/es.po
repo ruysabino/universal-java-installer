@@ -1,0 +1,84 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: universal-java-installer 1.0.0\n"
+"Report-Msgid-Bugs-To: https://github.com/ruysabino/universal-java-installer/issues\n"
+"POT-Creation-Date: 2026-08-18 18:00+0000\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Language: es\n"
+
+msgid "Java Installer"
+msgstr "Instalador de Java"
+
+msgid "Default"
+msgstr "Predeterminado"
+
+msgid "Make default"
+msgstr "Hacer predeterminado"
+
+msgid "Install"
+msgstr "Instalar"
+
+msgid "Remove"
+msgstr "Desinstalar"
+
+msgid "Refresh"
+msgstr "Actualizar"
+
+msgid "About"
+msgstr "Acerca de"
+
+msgid "Cancel"
+msgstr "Cancelar"
+
+msgid "Done"
+msgstr "Hecho"
+
+msgid "Downloading"
+msgstr "Descargando"
+
+msgid "downloaded from Oracle · licence acceptance required"
+msgstr "descargado de Oracle · requiere aceptar la licencia"
+
+msgid "Unsupported system"
+msgstr "Sistema no compatible"
+
+msgid "No supported package manager (apt, dnf or pacman) was found on %s."
+msgstr "No se encontró un gestor de paquetes compatible (apt, dnf o pacman) en %s."
+
+msgid "%(distro)s · %(backend)s · %(arch)s"
+msgstr "%(distro)s · %(backend)s · %(arch)s"
+
+msgid "Installing %s…"
+msgstr "Instalando %s…"
+
+msgid "Removing %s…"
+msgstr "Desinstalando %s…"
+
+msgid "Setting %s as default…"
+msgstr "Estableciendo %s como predeterminado…"
+
+msgid "Downloading %s…"
+msgstr "Descargando %s…"
+
+msgid "Oracle licence agreement"
+msgstr "Acuerdo de licencia de Oracle"
+
+msgid "%(name)s is downloaded directly from Oracle and is not redistributed by this application.\n\nBy continuing you accept the %(licence)s:\n%(url)s"
+msgstr "%(name)s se descarga directamente de Oracle y esta aplicación no lo redistribuye.\n\nAl continuar, acepta la %(licence)s:\n%(url)s"
+
+msgid "I accept · Download"
+msgstr "Acepto · Descargar"
+
+msgid "checksum published by Oracle does not match"
+msgstr "la suma de verificación publicada por Oracle no coincide"
+
+msgid "Authentication cancelled"
+msgstr "Autenticación cancelada"
+
+msgid "Operation failed (code %s)"
+msgstr "La operación falló (código %s)"
+
+msgid "Install and manage OpenJDK and Oracle JDK versions on Debian, Ubuntu, Fedora, Arch and derivatives.\n\nFork of pardus-java-installer by Pardus (TÜBİTAK ULAKBİM), GPL-3.0-or-later. Not affiliated with Pardus or Oracle."
+msgstr "Instala y gestiona versiones de OpenJDK y Oracle JDK en Debian, Ubuntu, Fedora, Arch y derivadas.\n\nFork de pardus-java-installer de Pardus (TÜBİTAK ULAKBİM), GPL-3.0-or-later. Sin afiliación con Pardus ni Oracle."

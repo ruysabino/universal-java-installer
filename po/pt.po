@@ -1,0 +1,84 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: universal-java-installer 1.0.0\n"
+"Report-Msgid-Bugs-To: https://github.com/ruysabino/universal-java-installer/issues\n"
+"POT-Creation-Date: 2026-08-18 18:00+0000\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Language: pt\n"
+
+msgid "Java Installer"
+msgstr "Instalador Java"
+
+msgid "Default"
+msgstr "Predefinido"
+
+msgid "Make default"
+msgstr "Tornar predefinido"
+
+msgid "Install"
+msgstr "Instalar"
+
+msgid "Remove"
+msgstr "Remover"
+
+msgid "Refresh"
+msgstr "Atualizar"
+
+msgid "About"
+msgstr "Sobre"
+
+msgid "Cancel"
+msgstr "Cancelar"
+
+msgid "Done"
+msgstr "Concluído"
+
+msgid "Downloading"
+msgstr "A transferir"
+
+msgid "downloaded from Oracle · licence acceptance required"
+msgstr "transferido da Oracle · exige aceitação da licença"
+
+msgid "Unsupported system"
+msgstr "Sistema não suportado"
+
+msgid "No supported package manager (apt, dnf or pacman) was found on %s."
+msgstr "Não foi encontrado um gestor de pacotes suportado (apt, dnf ou pacman) em %s."
+
+msgid "%(distro)s · %(backend)s · %(arch)s"
+msgstr "%(distro)s · %(backend)s · %(arch)s"
+
+msgid "Installing %s…"
+msgstr "A instalar %s…"
+
+msgid "Removing %s…"
+msgstr "A remover %s…"
+
+msgid "Setting %s as default…"
+msgstr "A definir %s como predefinido…"
+
+msgid "Downloading %s…"
+msgstr "A transferir %s…"
+
+msgid "Oracle licence agreement"
+msgstr "Contrato de licença da Oracle"
+
+msgid "%(name)s is downloaded directly from Oracle and is not redistributed by this application.\n\nBy continuing you accept the %(licence)s:\n%(url)s"
+msgstr "%(name)s é transferido diretamente da Oracle e não é redistribuído por esta aplicação.\n\nAo continuar, aceita a %(licence)s:\n%(url)s"
+
+msgid "I accept · Download"
+msgstr "Aceito · Transferir"
+
+msgid "checksum published by Oracle does not match"
+msgstr "a soma de verificação publicada pela Oracle não corresponde"
+
+msgid "Authentication cancelled"
+msgstr "Autenticação cancelada"
+
+msgid "Operation failed (code %s)"
+msgstr "A operação falhou (código %s)"
+
+msgid "Install and manage OpenJDK and Oracle JDK versions on Debian, Ubuntu, Fedora, Arch and derivatives.\n\nFork of pardus-java-installer by Pardus (TÜBİTAK ULAKBİM), GPL-3.0-or-later. Not affiliated with Pardus or Oracle."
+msgstr "Instale e faça a gestão de versões OpenJDK e Oracle JDK em Debian, Ubuntu, Fedora, Arch e derivados.\n\nFork do pardus-java-installer da Pardus (TÜBİTAK ULAKBİM), GPL-3.0-or-later. Sem qualquer afiliação com a Pardus ou a Oracle."
